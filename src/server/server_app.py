@@ -5,7 +5,7 @@ from src.common.message import send_frame, recv_frame
 from src.common.hkdf import hkdf_derive
 from src.common.aead import b64e, b64d, fp, NonceState, enc, dec
 
-HOST, PORT = "0.0.0.0", 9000
+HOST = "0.0.0.0"
 KEM_ALG = "Kyber512"
 
 def info(session_id: bytes) -> bytes:
