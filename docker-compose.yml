@@ -3,8 +3,6 @@ services:
     build: .
     container_name: hybrid_pqc_server
     command: ["python", "-m", "src.server.server_app"]
-    ports:
-      - "9000:9000"
 
   client:
     build: .
