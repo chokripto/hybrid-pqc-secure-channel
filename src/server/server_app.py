@@ -25,6 +25,7 @@ def run():
         print(f"[server] listening on {HOST}:{PORT}")
 
         c, addr = s.accept()
+        print(f"[server] connection from {addr}")
         with c:
             session_id = os.urandom(16)
             salt = os.urandom(16)
