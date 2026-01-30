@@ -44,3 +44,4 @@ This design reflects real-world migration patterns toward PQC, where systems oft
 ### Build + run (server + client)
 ```bash
 docker-compose up --build
+The client exits after a successful handshake and one encrypted request/response (expected behavior).
